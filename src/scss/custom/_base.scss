@@ -1,9 +1,15 @@
 body {
   background-color: $background;
+  background-image: url(../../assets/images/bg.jpg);
+  background-size: 50px;
 }
 
 .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+
+  @include bp(md) {
+    padding: 0 16px;
+  }
 }
