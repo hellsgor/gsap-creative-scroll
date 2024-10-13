@@ -1,6 +1,6 @@
 @import "../custom/variables";
 
-@mixin font-face($family, $woff2, $woff, $weight, $local: null) {
+@mixin font-face($family, $woff2, $weight, $woff: null, $local: null) {
   @font-face {
     font-family: $family;
     font-weight: $weight;
