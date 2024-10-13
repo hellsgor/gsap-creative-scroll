@@ -1,15 +1,15 @@
 @use "sass:color";
 
-$primary: #646cff;
-$secondary: #ffff00;
+// $primary: #646cff;
+// $secondary: #ffff00;
 $background: #1f1f1f;
-$darken: #1a1a1a;
+// $darken: #1a1a1a;
 
-$text: #fff;
-$text-sub: #888;
-$text-dark: $background;
-$headings: $primary;
-$border: color.adjust($primary, $lightness: 20%);
+// $text: #fff;
+// $text-sub: #888;
+// $text-dark: $background;
+// $headings: $primary;
+// $border: color.adjust($primary, $lightness: 20%);
 
-$hover: color.adjust($primary, $lightness: -10%);
-$active: color.adjust($primary, $lightness: -20%);
+// $hover: color.adjust($primary, $lightness: -10%);
+// $active: color.adjust($primary, $lightness: -20%);
