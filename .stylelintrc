@@ -1,0 +1,25 @@
+{
+  "extends": ["stylelint-config-recommended-scss", "stylelint-config-clean-order"],
+  "rules": {
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "no-descending-specificity": null,
+    "order/order": ["declarations", "at-rules"],
+    "block-no-empty": true,
+    "no-duplicate-selectors": true,
+    "color-named": "never",
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested", "blockless-after-same-name-blockless"],
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "scss/no-global-function-names": null
+  }
+}

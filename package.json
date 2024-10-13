@@ -1,0 +1,44 @@
+{
+  "name": "sborka",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "browserslist": [
+    "> 0.5%, last 2 versions, Firefox ESR, not dead"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint --fix . && prettier --write . && stylelint '**/*.scss' --fix",
+    "dev": "vite",
+    "build": "npm run lint && vite build",
+    "preview": "vite preview",
+    "deploy:demo": "npm run build && node deploy.js --demo",
+    "deploy:prod": "npm run build && node deploy.js --prod"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "fast-glob": "^3.3.2",
+    "husky": "^9.1.5",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.78.0",
+    "sftp-sync-deploy": "^0.7.1",
+    "sharp": "^0.33.5",
+    "stylelint": "^16.9.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "svgo": "^3.3.2",
+    "vite": "^5.4.1",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-static-copy": "^1.0.6",
+    "vite-plugin-stylelint": "^5.3.1"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.0"
+  }
+}

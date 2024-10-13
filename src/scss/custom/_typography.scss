@@ -1,0 +1,58 @@
+body,
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: px-to-rem(16);
+  font-weight: 400;
+  font-style: normal;
+  color: $text;
+
+  &_sub {
+    color: $text-sub;
+  }
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: $text;
+}
+
+h1,
+.heading_h1 {
+  font-size: px-to-rem(48);
+}
+
+h2,
+.heading_h2 {
+  font-size: px-to-rem(48);
+}
+
+h3,
+.heading_h3 {
+  font-size: px-to-rem(32);
+}
+
+h4,
+.heading_h4 {
+  font-size: px-to-rem(28);
+}
+
+h5,
+.heading_h5 {
+  font-size: px-to-rem(24);
+}
+
+h6,
+.heading_h6 {
+  font-size: px-to-rem(20);
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+a {
+  color: $primary;
+}

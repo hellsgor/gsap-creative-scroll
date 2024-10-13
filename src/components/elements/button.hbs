@@ -1,0 +1,39 @@
+{{#if this.href}}
+  <a 
+    href="{{this.href}}" 
+    class="button{{#if this.white}} button_white{{/if}}{{#if this.wide}} button_wide{{/if}}{{#if this.classes}} {{this.classes}}{{/if}}"
+    {{#if this.id}}id="{{this.id}}"{{/if}}
+    {{#if this.attrs}}{{{this.attrs}}}{{/if}}
+  >
+    <div class="button__wrapper">
+      <span class="button__text">{{this.text}}</span>
+      {{#if this.iconId}}
+        <span class="button__icon">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{this.iconId}}" />
+          </svg>
+        </span>
+      {{/if}}
+    </div>
+  </a>
+{{else}}
+  <button
+    class="button{{#if this.white}} button_white{{/if}}{{#if this.wide}} button_wide{{/if}}{{#if this.classes}} {{this.classes}}{{/if}}"
+    {{#if this.disabled}}disabled{{/if}}
+    {{#if this.id}}id="{{this.id}}"{{/if}}
+    {{#if this.form}}form='{{this.form}}'{{/if}}
+    {{#if this.type}}type='{{this.type}}'{{/if}}
+    {{#if this.attrs}}{{{this.attrs}}}{{/if}}
+  >
+    <div class="button__wrapper">
+      <span class="button__text">{{this.text}}</span>
+      {{#if this.iconId}}
+        <span class="button__icon">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{this.iconId}}" />
+          </svg>
+        </span>
+      {{/if}}
+    </div>
+  </button>
+{{/if}}

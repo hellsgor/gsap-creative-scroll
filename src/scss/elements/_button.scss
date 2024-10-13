@@ -1,0 +1,55 @@
+.button {
+  cursor: pointer;
+
+  overflow: hidden;
+
+  width: fit-content;
+  padding: 16px 48px;
+
+  font-size: 20px;
+  color: $text;
+
+  background-color: $darken;
+  border: 1px solid $darken;
+  border-radius: $radius;
+  outline: none;
+  @include transition(border-color);
+
+  &__wrapper {
+    display: flex;
+    column-gap: 4px;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--text-secondary-default);
+    }
+  }
+
+  &_white {
+    color: $text-dark;
+    background-color: #fff;
+
+    .button__icon svg {
+      fill: $text-dark;
+    }
+  }
+
+  &_wide {
+    width: 100%;
+  }
+
+  &:hover {
+    border-color: $primary;
+  }
+}

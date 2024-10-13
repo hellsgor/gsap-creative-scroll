@@ -1,0 +1,38 @@
+.demo {
+  display: flex;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+  }
+
+  &__logos {
+    display: flex;
+    column-gap: 180px;
+    align-items: center;
+    justify-content: center;
+
+    & a {
+      position: relative;
+      display: block;
+      width: 180px;
+      height: 180px;
+      @include transition(filter);
+
+      @media (hover: hover) {
+        &:hover {
+          filter: drop-shadow(0 0 50px #646cffaa);
+        }
+      }
+    }
+  }
+
+  &__heading {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,28 @@
+<section class="demo">
+  <div class="container">
+    <div class="demo__wrapper">
+      <div class="demo__logos">
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="./assets/images/vite.svg" class="logo" alt="Vite logo" />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+          <img src="./assets/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+      </div>
+
+      <h1 class="heading heading_h1 demo__heading">
+        Hello, Vite!
+      </h1>
+
+      {{> elements/button 
+          classes='demo__counter-button'
+          id='counter'
+          type='button'
+      }}
+
+      <span class="paragraph paragraph_sub">
+          Click on the Vite logo to learn more
+      </span>
+    </div>
+  </div>
+</section>

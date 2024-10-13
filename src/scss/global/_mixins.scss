@@ -1,0 +1,37 @@
+@import "../custom/variables";
+
+@mixin font-face($family, $woff2, $woff, $weight, $local: null) {
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+
+    @if $local {
+      src: local($local), url(../assets/fonts/#{woff2}), url(../assets/fonts/#{$woff});
+    } @else {
+      src: url(../assets/fonts/#{$woff2}), url(../assets/fonts/#{$woff});
+    }
+  }
+}
+
+@mixin transition($transitions...) {
+  $formatted-transitions: ();
+  $property: ();
+
+  @each $transition in $transitions {
+    $parts: $transition;
+
+    $property: nth($parts, 1);
+    $duration: if(length($parts) > 1, nth($parts, 2), $transition-duration);
+    $function: if(length($parts) > 2, nth($parts, 3), $transition-func);
+
+    $formatted-transition: #{$property} #{$duration} #{$function};
+    $formatted-transitions: append($formatted-transitions, $formatted-transition, comma);
+  }
+
+  /* stylelint-disable */
+  transition: $formatted-transitions;
+  will-change: $property;
+  /* stylelint-enable */
+}
