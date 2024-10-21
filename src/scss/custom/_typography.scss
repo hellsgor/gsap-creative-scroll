@@ -1,35 +1,46 @@
 body,
 .paragraph {
-  font-family: "Roboto", sans-serif;
-  font-size: px-to-rem(16);
+  font-family: "Releway", sans-serif;
+  font-size: px-to-rem(20);
   font-weight: 400;
   font-style: normal;
+  line-height: 1.6;
   color: $text;
 
   &_sub {
-    color: $text-sub;
+    // color: $text-sub;
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .heading {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   color: $text;
 }
 
 h1,
 .heading_h1 {
-  font-size: px-to-rem(48);
+  margin-bottom: px-to-rem(20);
+  font-size: px-to-rem(120);
+  line-height: 1;
 }
 
 h2,
 .heading_h2 {
-  font-size: px-to-rem(48);
+  font-size: px-to-rem(40);
+  line-height: 1.2;
 }
 
 h3,
 .heading_h3 {
-  font-size: px-to-rem(32);
+  font-size: px-to-rem(40);
+  line-height: 1.2;
 }
 
 h4,
@@ -54,5 +65,5 @@ h6,
 }
 
 a {
-  color: $primary;
+  // color: $primary;
 }

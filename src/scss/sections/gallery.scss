@@ -1,0 +1,34 @@
+.gallery {
+  padding: calc((1vh + 1vw) * 6) 0;
+
+  &__container {
+    display: flex;
+    column-gap: 14%;
+  }
+
+  &__side {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    row-gap: calc((1vh + 1vw) * 10);
+    align-items: center;
+
+    &_left {
+      padding-top: 10vh;
+    }
+  }
+
+  &__image {
+    max-height: 90vh;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: px-to-rem(20);
+  }
+}
