@@ -12,11 +12,23 @@
     flex-direction: column;
     row-gap: calc((1vh + 1vw) * 10);
     align-items: center;
+
+    &_left {
+      padding-top: 10vh;
+    }
   }
 
   &__image {
+    max-height: 90vh;
     img {
-      max-height: 90vh;
+      width: auto;
+      height: 100%;
     }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: px-to-rem(20);
   }
 }
